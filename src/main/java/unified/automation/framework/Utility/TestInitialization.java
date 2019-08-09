@@ -33,10 +33,11 @@ public class TestInitialization extends Utilities{
 		if(browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
-		}else if(browser.equalsIgnoreCase("chrome")) {
+		}
+		/*}else if(browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
-		}else {
+		}*/else {
 			WebDriverManager.iedriver().setup();
 			driver=new InternetExplorerDriver();
 		}
